@@ -1,4 +1,11 @@
 #!/usr/bin/python3
+"""
+This module contains classes to manipulate squares
+"""
+
+
+
 class Square:
-    """A simple empty Square class."""
+    """This class represents a square"""
+
     pass
