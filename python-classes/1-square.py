@@ -1,15 +1,13 @@
 #!/usr/bin/python3
+"""
+This module contains code to manipulate squares
+"""
+
+
+class Square:
     """
-    class that difines a square with a private size.
+    This class represents a square
     """
 
-
-
-    class Square:
-        """
-        This class represents a square
-        """
-
-
-    def __inti__(self, size) -> None:
+    def __init__(self, size) -> None:
         self.__size = size
