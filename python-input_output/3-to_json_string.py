@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-import josn
+import json
 
-def to_josn_string(my_opj):
-    """Return the JOSN represntation of an object."""
-    return josn.dumps(my_opj)
+def to_json_string(my_opj):
+    """Return the JSON represntation of an object."""
+    return json.dumps(my_opj)
