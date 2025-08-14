@@ -13,9 +13,15 @@ class Student:
 
     def to_json(self, attrs=None):
         """
-        Return the dictionary representation of the Student instance.
-        If attrs is a list of strings, only return those attributes.
+        Return a dict representation of the Student instance.
+
+        If attrs is a list of strings, only those attribute names present
+        on the instance are returned.
         """
         if isinstance(attrs, list) and all(isinstance(item, str) for item in attrs):
-            return {key: getattr(self, key) for key in attrs if hasattr(self, key)}
+            return {
+                key: getattr(self, key)
+                for key in attrs
+                if hasattr(self, key)
+            }
         return self.__dict__
