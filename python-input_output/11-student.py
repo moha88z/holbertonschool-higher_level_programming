@@ -18,7 +18,9 @@ class Student:
         If attrs is a list of strings, only those attribute names present
         on the instance are returned.
         """
-        if isinstance(attrs, list) and all(isinstance(item, str) for item in attrs):
+        if isinstance(attrs, list) and all(
+            isinstance(item, str) for item in attrs
+        ):
             return {
                 key: getattr(self, key)
                 for key in attrs
