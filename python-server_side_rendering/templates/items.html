@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Items</title>
+</head>
+<body>
+    {% include 'header.html' %}
+    <main>
+        <h2>Items List</h2>
+        <ul>
+            {% for item in items %}
+                <li>{{ item }}</li>
+            {% endfor %}
+        </ul>
+    </main>
+    {% include 'footer.html' %}
+</body>
+</html>
